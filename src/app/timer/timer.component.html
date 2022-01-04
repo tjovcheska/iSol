@@ -1,35 +1,26 @@
 <div class="split-screen">
-
     <div class="left"></div>
-
     <div class="right">
         <form>
-        <div class="logo">{{logo}}</div>
-
-        <section class="copy">
-            <h3>FUEL YOUR BODY AND MIND WITH </h3>
-            <h1>15% OFF</h1>
-            <p>your first order</p>
-
-            <div class="timer">
-                <span id="minutes"> {{mins}} </span>m
-                <span id="seconds"> {{secs}} </span>s
+            <div class="logo">{{logo}}</div>
+            <section class="copy">
+                <h3> {{message1}} </h3>
+                <h1> {{discount}} </h1>
+                <p> {{message2}} </p>
+                <div class="timer">
+                    <span id="minutes"> {{mins}} </span>m
+                    <span id="seconds"> {{secs}} </span>s
+                </div>
+            </section>
+            <div class="input-container email">
+                <i class="fa fa-envelope"></i>
+                <input id="email" name="email" type="email" placeholder="Email Address">        
             </div>
-
-        </section>
-
-        <div class="input-container email">
-            <i class="glyphicon glyphicon-envelope"></i>
-            <input id="email" name="email" type="email" placeholder="Email Address">
-        </div>
-
-        <button class="submit-btn" type="submit">SUBMIT BUTTON</button>
-        <button class="button2-btn" type="button">BUTTON 2</button>
-                    
-        <section class="copy legal">
-            <p><span class="small">{{ message }}</span></p>
-        </section>
-                    
+            <button class="submit-btn" type="submit">SUBMIT BUTTON</button>
+            <button class="button2-btn" type="button">BUTTON 2</button>
+            <section class="copy legal">
+                <p><span class="small"> {{message}} </span></p>
+            </section>        
         </form>
     </div>
 </div>

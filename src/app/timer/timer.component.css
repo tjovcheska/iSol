@@ -2,21 +2,6 @@
     font-size: 100%;
     font-size: 16px;
     line-height: 1.5;
-    --primary-blue: #233975;
-}
-
-.logo {
-    background-color: orange;
-    color: white;
-    text-align: center;
-    margin-top: 100 px;
-    margin-bottom: 100px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-stretch: semi-condensed;
-    font-weight: bold;
-    padding: 0.5rem;
-    margin-left: 100px;
-    margin-right: 100px;
 }
 
 body {
@@ -42,17 +27,14 @@ p {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.copy legal {
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
 .split-screen {
     display: flex;
     flex-direction: column;
 }
 
 .left {
-    height: 200px;
+    background-image: url("https://images.unsplash.com/photo-1641155785005-ffeb605006d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80");
+    background-size: cover;
 }
 
 .left, .right {
@@ -61,13 +43,22 @@ p {
     align-items: center;
 }
 
-.left {
-    background-size: cover;
-    background-image: url("https://images.unsplash.com/photo-1641155785005-ffeb605006d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80");
+.right form {
+    width: 328px;
 }
 
-.left p {
-    font-weight: 400;
+.logo {
+    background-color: orange;
+    color: white;
+    text-align: center;
+    margin-top: 100 px;
+    margin-bottom: 100px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-stretch: semi-condensed;
+    font-weight: bold;
+    padding: 0.5rem;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .right .copy {
@@ -80,8 +71,15 @@ p {
     font-size: 0.875rem;
 }
 
-.right form {
-    width: 328px;
+.timer {
+    color: orange;
+    border: dashed;
+    margin-bottom: 10px;
+    font-size: large;
+    font-weight: 500;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-weight: bold;
 }
 
 form input[type="email"] {
@@ -92,12 +90,6 @@ form input[type="email"] {
     padding: 1em;
     margin-bottom: 1.25rem;
     font-size: 0.875rem;
-}
-
-label {
-    display: black;
-    margin-bottom: 0.5rem;
-    font-size: 0.75rem;
 }
 
 .submit-btn {
@@ -128,19 +120,11 @@ label {
     margin-bottom: 10px;
 }
 
-.timer {
-    color: orange;
-    border: dashed;
-    margin-bottom: 10px;
-    font-size: large;
-    font-weight: 500;
-    margin-left: 100px;
-    margin-right: 100px;
-    font-weight: bold;
+.copy legal {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 730px) {
     .split-screen {
         flex-direction: row;
         height: 100vh;
@@ -151,5 +135,3 @@ label {
         height: auto;
     }
 }
-
-

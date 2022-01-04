@@ -9,10 +9,13 @@ export class TimerComponent implements OnInit {
 
   message = "One time use only. Limited time special offer. Excludes subscriptions, kits, bundles, and sale items.";
   logo = "BULLETPROOF";
+  message1 = "FUEL YOUR BODY AND MIND WITH";
+  discount = "15% OFF";
+  message2= "your first order";
+
   constructor() { }
 
   ngOnInit() {
-    //this.countdownTimer();
   }
 
   mins: number = 14;
@@ -22,20 +25,12 @@ export class TimerComponent implements OnInit {
   
   x = setInterval(() => {
     
-    //console.log(countDownDate);
-    
     var now = new Date().getTime();
-    //console.log(now);
         
     var distance = this.countDownDate - now;
 
     this.mins = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    this. secs = Math.floor((distance % (1000 * 60)) / 1000);
+    this.secs = Math.floor((distance % (1000 * 60)) / 1000);
     
   }, 1000);
 }
-
-  
-
-
-
